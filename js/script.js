@@ -51,8 +51,8 @@ $(document).ready(function(){
         $('#explorer').find('h1').fadeIn(300);
         $('div img').attr('src','images/ie.png');
         $('#imgDiv a').attr('href','https://www.microsoft.com/sv-se/download/internet-explorer.aspx');
-        $('#imgDiv').append('<img src="images/opera.png">'+'<img src="images/firefox.png">'+'<img src="images/chrome.png">'+
-            '<img src="images/safari.png">').css('flex-direction',"row");
+        $('#imgDiv').append('<a href="http://www.opera.com/sv/computer"><img src="images/opera.png"></a>'+'<a href="https://www.mozilla.org/sv-SE/firefox/new/"><img src="images/firefox.png"></a>'+'<a href="https://www.google.com/chrome/browser/desktop/index.html"><img src="images/chrome.png"></a>'+
+            '<a href="images/safari.png"><img src="images/safari.png"></a>').css('flex-direction',"row");
         $('#explorer .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows+'</br></br>'+'Du borde ladda ner en annan webbläsare').delay(1000).fadeIn(1000);
 
     }
@@ -61,8 +61,8 @@ $(document).ready(function(){
         $('#edge').find('h1').fadeIn(300);
         $('div img').attr('src','images/ie.png');
         $('#imgDiv a').attr('href','https://www.microsoft.com/sv-se/windows/microsoft-edge');
-        $('#imgDiv').append('<img src="images/opera.png">'+'<img src="images/firefox.png">'+'<img src="images/chrome.png">'+
-            '<img src="images/safari.png">').css('flex-direction',"row");
+        $('#imgDiv').append('<a href="http://www.opera.com/sv/computer"><img src="images/opera.png"></a>'+'<a href="https://www.mozilla.org/sv-SE/firefox/new/"><img src="images/firefox.png"></a>'+'<a href="https://www.google.com/chrome/browser/desktop/index.html"><img src="images/chrome.png"></a>'+
+            '<a href="images/safari.png"><img src="images/safari.png"></a>').css('flex-direction',"row");
         $('#edge .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows+'</br></br>'+'Du borde ladda ner en annan webbläsare').delay(1000).fadeIn(1000);
 
     }
