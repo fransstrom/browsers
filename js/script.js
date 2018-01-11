@@ -1,4 +1,5 @@
 $('#imgDiv').hide();
+$('#browsContainer').hide();
 $(document).ready(function(){
 
 
@@ -72,20 +73,14 @@ $(document).ready(function(){
         $('#safari').find('h1').fadeIn(300);
         $('div img').attr('src','images/safari.png');
         $('#imgDiv a').attr('href','https://support.apple.com/sv_SE/downloads/safari');
-        $('#edge .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows).delay(1000).fadeIn(1000);
-        $('#edge').css("color", "#fcd207").css("font-weight","bold");
+        $('#safari .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows).delay(1000).fadeIn(1000);
+        $('#safari').css("color", "#fcd207").css("font-weight","bold");
     }
 
 
 
 
-/*$('#browsContainer').find('div').slideDown(1500, function () {
-
-    $("h2").each(function(index) {
-        $(this).delay(200*index).fadeIn(600);
-    });
-
-});*/
+$('#browsContainer').slideDown(1500);
 
     $('#imgDiv').slideToggle(1000).animate({ 'marginTop': '30px'},500);
 
