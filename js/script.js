@@ -23,51 +23,69 @@ $(document).ready(function(){
 
 
     if(brows=='Chrome')
-    {
+    {   $('#browsContainer').find('#chrome').fadeIn(300);
+        $('#chrome').find('h1').fadeIn(300);
         $('div img').attr('src','images/chrome.png');
         $('#imgDiv a').attr('href','https://www.google.com/chrome/browser/desktop/index.html');
-        $('#chrome .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows).delay(2000).fadeIn(1000);
-        $('#chrome').css("color", "#fcd207").css("font-weight","bold");
+        $('#chrome .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows).delay(1000).fadeIn(1000);
+        $('#chrome h1').css("color", "red").css("font-weight","bold");
     }
     else if(brows=='Firefox')
-    {
+    {  $('#browsContainer').find('#firefox').fadeIn(300);
+        $('#firefox').find('h1').fadeIn(300);
         $('div img').attr('src','images/firefox.png');
         $('#imgDiv a').attr('href','https://www.mozilla.org/sv-SE/firefox/new/');
-        $('#firefox .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows).delay(2200).fadeIn(1000);
-        $('#firefox').css("color", "#fcd207").css("font-weight","bold");
+        $('#firefox .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows).delay(1000).fadeIn(1000);
+        $('#firefox h1').css("color", "orange").css("font-weight","bold");
     }
     else if(brows=='Opera')
-    {
+    {  $('#browsContainer').find('#opera').fadeIn(300);
+        $('#opera').find('h1').fadeIn(300);
         $('div img').attr('src','images/opera.png');
         $('#imgDiv a').attr('href','http://www.opera.com/sv/computer');
-        $('#opera .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows).delay(2400).fadeIn(1000);
-        $('#opera').css("color", "#fcd207").css("font-weight","bold");
+        $('#opera .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows).delay(1000).fadeIn(1000);
+        $('#opera h1').css("color", "red").css("font-weight","bold");
     }
     else if(brows=='IE')
-    {
+    {  $('#browsContainer').find('#explorer').fadeIn(300);
+        $('#explorer').find('h1').fadeIn(300);
         $('div img').attr('src','images/ie.png');
         $('#imgDiv a').attr('href','https://www.microsoft.com/sv-se/download/internet-explorer.aspx');
-        $('#explorer .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows).delay(2600).fadeIn(1000);
-        $('#ie').css("color", "#fcd207").css("font-weight","bold");
+        $('#imgDiv').append('<img src="images/opera.png">'+'<img src="images/firefox.png">'+'<img src="images/chrome.png">'+
+            '<img src="images/safari.png">').css('flex-direction',"row");
+        $('#explorer .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows+'</br></br>'+'Du borde ladda ner en annan webbläsare').delay(1000).fadeIn(1000);
+
     }
     else if(brows=='Edge')
-    {
+    {  $('#browsContainer').find('#edge').fadeIn(300);
+        $('#edge').find('h1').fadeIn(300);
         $('div img').attr('src','images/ie.png');
         $('#imgDiv a').attr('href','https://www.microsoft.com/sv-se/windows/microsoft-edge');
-        $('#edge .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows).delay(2800).fadeIn(1000);
+        $('#imgDiv').append('<img src="images/opera.png">'+'<img src="images/firefox.png">'+'<img src="images/chrome.png">'+
+            '<img src="images/safari.png">').css('flex-direction',"row");
+        $('#edge .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows+'</br></br>'+'Du borde ladda ner en annan webbläsare').delay(1000).fadeIn(1000);
+
+    }
+    else if(brows=='Safari')
+    {
+        $('#browsContainer').find('#safari').fadeIn(300);
+        $('#safari').find('h1').fadeIn(300);
+        $('div img').attr('src','images/safari.png');
+        $('#imgDiv a').attr('href','https://support.apple.com/sv_SE/downloads/safari');
+        $('#edge .thisBrows').append('Du använder '+navigator.sayswho+'.'+'</br>'+' Klicka på loggan för den senaste versionen av '+ brows).delay(1000).fadeIn(1000);
         $('#edge').css("color", "#fcd207").css("font-weight","bold");
     }
 
 
 
 
-$('#browsContainer').find('div').slideDown(1500, function () {
+/*$('#browsContainer').find('div').slideDown(1500, function () {
 
     $("h2").each(function(index) {
         $(this).delay(200*index).fadeIn(600);
     });
 
-});
+});*/
 
     $('#imgDiv').slideToggle(1000).animate({ 'marginTop': '30px'},500);
 

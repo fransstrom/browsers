@@ -1,4 +1,4 @@
-h2{
+h1{
     text-align: center;
     display: flex;
     justify-content: center;
@@ -9,15 +9,21 @@ body{
 }
 
 #browsContainer{
-    padding-top: 40px;
+    padding-top: 20px;
     margin-right: 30%;
     margin-left: 30%;
     background-color: cornflowerblue;
     border-radius: 0 0 20px 20px;
     color:white;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     box-shadow: 5px 5px #888888;
 }
+
+#explorer h1, #edge h1{
+    color:crimson;
+    font-weight:bold;
+}
+
 
 div div{
     height:80px;
@@ -42,6 +48,7 @@ div div{
 img{
     height:150px;
     width:150px;
+    margin:0 20px;
 }
 .hoverImg{
     height:170px;
